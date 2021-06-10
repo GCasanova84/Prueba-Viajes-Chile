@@ -11,10 +11,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/a236162b1f.js" crossorigin="anonymous"></script>
+    <!-- CSS3 -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Typeform -->
     <script>
       (function() {
         var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/";
@@ -26,28 +30,29 @@
     <link rel="icon" type="image/svg" href="assets/img/viajes.svg">
     <title>Viajes Chile</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark position-sticky top-0 margen" style="z-index:1;">
-      <div class="container-fluid px-0">
+  <body style="background-color:black;">
+    <nav id="navegador" class="navbar navbar-expand-md navbar-dark container-fluid navstyle" style="z-index:2;">
+      <div class="container px-0">
         <a class="navbar-brand" href="#">
-          <img src="assets/img/viajes.svg" alt="logo Viajes Chile" width="30" height="24">
+          <img src="assets/img/viajes.svg" alt="logo Viajes Chile" width="30rem">
+          Viajes Chile
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#carrusel">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="#carrusel" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ir a inicio">Inicio</a>
+            </li>
+            <li class="nav-item d-none d-md-block">
+              <a class="nav-link" href="#presentacion" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Para saber más de nosotros">Quienes Somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#presentacion">Quienes Somos</a>
+              <a class="nav-link" href="#destacados" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Nuestros artículos destacados">Destacados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#destacados">Destacados</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#formulario">Contacto</a>
+              <a class="nav-link" href="#formulario" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contáctanos">Contacto</a>
             </li>
           </ul>
         </div>
@@ -76,80 +81,80 @@
         </button>
       </div>
     </header>
-    <section id="presentacion" class="">
-      <div class="container-fluid">
+    <section id="presentacion" class="d-none d-md-block">
+      <div class="container-fluid p-5 text-light">
         <div class="row">
-          <h2>¿Quiénes somos?</h2>
-          <hr>
+          <h4 class="text-center">¿Quiénes somos?</h4>
+          <hr class="my-4" style="border-top:2px solid #17a3b8;opacity:1;">
         </div>
         <div class="row">
-          <div class="col">
-            <div class="row">
+          <div class="col mx-3">
+            <div class="row azul text-center fs-3 py-1">
               <i class="fas fa-plane"></i>
             </div>
             <div class="row">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
-          <div class="col">
+          <div class="col mx-3">
             <div class="row">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="p-0 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="row">
+            <div class="row azul text-center fs-3 py-1">
               <i class="fas fa-mountain"></i>
             </div>
           </div>
-          <div class="col">
-            <div class="row">
-              <i class="fas fa-route"></i>
+          <div class="col mx-3">
+            <div class="row azul">
+              <i class="fas fa-route text-center fs-3 py-1"></i>
             </div>
             <div class="row">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section id="destacados" class="">
-      <div class="container-fluid">
+      <div class="container-fluid pt-5 px-5 pb-0 pb-md-5 text-light">
         <div class="row">
-          <h2>Destacados</h2>
-          <hr>
+          <h4 class="text-center">Destacados</h4>
+          <hr class="my-4" style="border-top:2px solid #17a3b8;opacity:1;">
         </div>
-        <div class="row">
-          <div class="col">
-            <div class="card" style="width: 18rem;">
+        <div class="row px-md-4">
+          <div class="col-md-3 mb-4 mb-md-block">
+            <div class="card h-100" style="width: 100%;">
               <img src="assets/img/card1.jpg" class="card-img-top" alt="Paisaje">
-              <div class="card-body">
+              <div class="card-body azul">
                 <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-3 mb-4 mb-md-block">
+            <div class="card h-100" style="width: 100%;">
               <img src="assets/img/card2.jpg" class="card-img-top" alt="Paisaje">
-              <div class="card-body">
+              <div class="card-body azul">
                 <h5 class="card-title">Consectetur adipisicing elit</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-3 mb-4 mb-md-block">
+            <div class="card h-100" style="width: 100%;">
               <img src="assets/img/card3.jpg" class="card-img-top" alt="Paisaje">
-              <div class="card-body">
+              <div class="card-body azul">
                 <h5 class="card-title">Sed do eiusmod tempor incididunt ut labore</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-3 mb-4 mb-md-block">
+            <div class="card h-100" style="width: 100%;">
               <img src="assets/img/card4.jpg" class="card-img-top" alt="Paisaje">
-              <div class="card-body">
+              <div class="card-body azul">
                 <h5 class="card-title">Ut enim ad minim veniam</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
             </div>
           </div>
@@ -157,32 +162,34 @@
       </div>
     </section>
     <section id="formulario" class="">
-      <div class="container-fluid">
+      <div class="container-fluid p-5 text-light">
         <div class="row">
-          <h2>Contacto</h2>
-          <hr>
+          <h4 class="text-center">Contacto</h4>
+          <hr class="my-4" style="border-top:2px solid #17a3b8;opacity:1;">
         </div>
-        <div class="row">
+        <div class="row px-md-4">
           <div class="typeform-widget" data-url="https://form.typeform.com/to/drRmgqF1?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div>
         </div>
       </div>
     </section>
-    <footer class="">
-      <div class="row">
-        <div class="col">
-          <h1>VIAJES CHILE</h1>
+    <footer class="container-fluid azul text-light text-center fs-3">
+      <div class="row py-1">
+        <div class="col-md-6">
+          <h1 class="fs-3 mb-0 mb-md-block">VIAJES CHILE</h1>
         </div>
-        <div class="col">
-          <div class="">
-            <i class="fab fa-github-square"></i>
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-facebook-square"></i>
+        <div class="col-md-6">
+          <div>
+            <a href="https://github.com/" target="_blank" class="text-light"><i class="fab fa-github-square mx-1"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" class="text-light"><i class="fab fa-linkedin mx-1"></i></a>
+            <a href="https://twitter.com/" target="_blank" class="text-light"><i class="fab fa-twitter-square mx-1"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" class="text-light"><i class="fab fa-facebook-square mx-1"></i></a>
           </div>
         </div>
       </div>
     </footer>
+    <!-- Bootstrap V5.0 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Javascript -->
     <script src="assets/js/script.js"></script>
   </body>
 </html>
